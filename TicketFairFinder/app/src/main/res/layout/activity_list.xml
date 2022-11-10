@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ListActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mcTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:elevation="8dp">
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvResults"
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:background="@color/purple_500"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_below="@+id/mcTop"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="Back"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@color/white"
+        android:onClick="backClicked"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>
